@@ -25,10 +25,15 @@ nav{
 }
 #icnoneNav{
     background-color: none;
-    justify-items: end;
+    margin-left: auto;
+    font-size: large;
 }
 .navbar-nav {
     justify-content: end;
+}
+.btn-group{
+    background-color: none;
+    color: black;
 }
 /* fim da config da nav */
 

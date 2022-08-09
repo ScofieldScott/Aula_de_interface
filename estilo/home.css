@@ -19,15 +19,23 @@ nav{
     justify-content: space-between;
 
 }
+ul{
+    background-color: none;
+}
 #pesquisa{
    margin-left: 40%;
 }
 #icnoneNav{
     background-color: none;
-    place-content: end;
+    margin-left: auto;
+    font-size: large;
 }
 .navbar-nav {
     justify-content: end;
+}
+.btn-group{
+    background-color: none;
+    color: black;
 }
 /* fim da config da nav */
 
@@ -66,7 +74,8 @@ img{
 .descricao{
     font-size: smaller;
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
+    font-style: oblique;
 }
 /* fim do config das recomendações para vc */
 
@@ -104,7 +113,8 @@ img{
 }
 .descricao1{
     font-size: medium;
-    color: green;
+    font-style: italic;
+    color: white;
     text-decoration: none;
 }
 /* fim da config dos artista que vc possa gostar */
@@ -141,13 +151,12 @@ img{
     padding-left: 40px;
     background-color: none;
 }
-.descricao1{
+.descricao2{
     font-size: smaller;
     color: black;
-    text-decoration: none;
     text-decoration: underline;
 }
 #img{
-    justify-content: end;
+    margin-left: auto;
 }
 /* Inicio do footer */

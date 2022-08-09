@@ -23,9 +23,16 @@ nav{
    margin-left: 40%;
 }
 #icnoneNav{
-    display: flex;
     background-color: none;
+    margin-left: auto;
+    font-size: large;
+}
+.navbar-nav {
     justify-content: end;
+}
+.btn-group{
+    background-color: none;
+    color: black;
 }
 /* fim da config da nav */
 
