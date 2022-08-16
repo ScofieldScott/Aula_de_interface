@@ -4,7 +4,7 @@ body{
 /* inicio do config da nav */
 
 nav{
-    background-color: aliceblue;
+    background-color: whitesmoke;
     display: flex;
     height: 100px;
 }
@@ -19,9 +19,17 @@ nav{
     justify-content: space-between;
 
 }
-
 #pesquisa{
-   margin-left: 40%;
+    border-radius: 20px;
+    width: 47%;
+    margin-left: auto;
+    border: 1px solid transparent;
+}
+#pesquisa:focus{
+    background-color: rgb(234, 250, 248);
+    color: rgb(255, 255, 255);
+    outline: auto;
+    border: 1px solid black;
 }
 #icnoneNav{
     background-color: none;
@@ -192,7 +200,7 @@ img{
 #footer{
     display: flex;
     height: 100px;
-    background-color: aliceblue;
+    background-color: whitesmoke;
 }
 .card1{
     padding-left: 10px;
