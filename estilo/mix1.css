@@ -1,12 +1,13 @@
 body{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.829);
 }
-/* inicio do config da nav */
 
+/* inicio do config da nav */
 nav{
-    background-color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.233);
     display: flex;
     height: 100px;
+    box-shadow: -2px 3px 10px black;
 }
 .navbar-brand{
     color: white;
