@@ -2,12 +2,11 @@ body{
     background-color: rgba(0, 0, 0, 0.829);
 }
 
-/* inicio do config da nav */
 nav{
     background-color: rgba(0, 0, 0, 0.233);
     display: flex;
     height: 100px;
-    box-shadow: -2px 3px 10px black;
+    box-shadow: -1150px 3px 10px black;
 }
 .navbar-brand{
     color: white;
@@ -17,19 +16,21 @@ nav{
 }
 #conteinerform{
     background-color: none;
-    justify-content: space-between;
-
+    margin-right: auto;
+}
+ul{
+    background-color: none;
 }
 #pesquisa{
     border-radius: 20px;
-    width: 47%;
-    margin-left: auto;
+    width: 37%;
+    margin-left: 260px;
     border: 1px solid transparent;
 }
 #pesquisa:focus{
     background-color: rgb(234, 250, 248);
-    color: rgb(255, 255, 255);
-    outline: auto;
+    color: black;
+    outline: none;
     border: 1px solid black;
 }
 #icnoneNav{
@@ -42,18 +43,34 @@ nav{
 }
 .btn-group{
     background-color: none;
-    color: black;
+    color: white;
+}
+#dropdown{
+    background-color: none;
+}
+#linklogo{
+    color: white;
+    text-decoration: underline;
+}
+#logo{
+    background-color: none;
+    padding-right: 0px;
 }
 /* fim da config da nav */
 
 /* inicio do aside */
-aside{
+#sidebar{
+
     padding-top: 2%;
     justify-content: space-around;
-    width: fit-content;
+    width: min-content;
     height: fit-content;
     color: white;
     position: absolute;
+    display: flex;
+}
+#aside{
+    display: flex;
 }
 button{
     text-emphasis-color: white;
@@ -65,7 +82,7 @@ ul{
     background-color: none;
 }
 .inicio{
-    margin-left: 10px;
+    margin-left: 7px;
     text-decoration: underline;
     font-size: large ;
 }
@@ -86,17 +103,12 @@ ul{
 }
 h5{
     padding-top: 15px;
-    margin-left: 6%;
+    margin-left: 4%;
     color: white;
 }
 img{
     border-radius: 10px;
 }
-.row{
-    margin-right: 2%;
-    justify-content: end;
-    background-color: none;
- }
 .card{
     background-color: black;
 }
@@ -113,12 +125,12 @@ img{
     padding-top: 5%;
     height: 280px;
     background-color: none;
-    margin-left: 20%;
-    box-shadow: 5px 5px 5px;
+    margin-left: 15%;
+    box-shadow: -7px 4px 4px rgba(0, 0, 0, 0.452);
     display: flex;
     justify-content: flex-start;
     border: 2px solid white;
-    border-bottom: 15px solid white;
+    border-bottom: 7px solid white;
 }
 #album{
     background-color: none;
@@ -129,6 +141,7 @@ img{
     margin-left: 20px;
     height: 50px;
     background-color: none;
+    text-shadow: 0.2px -0.5px 5px black;
 }
 #recomendacao{
     color: white;
@@ -143,27 +156,69 @@ img{
 #conjdebox{
     background-color: none;
     height: 1600px;
-    margin-left: 20%;
+    margin-left: 15%;
     border-left: 2px solid white;
-    padding-top: 40px;
+    padding-top: 30px;
+    box-shadow: -7px 4px 4px rgba(0, 0, 0, 0.452);
 }
+.column {
+    flex-direction: column;
+}
+/* .row {
+    width: 85%;
+    flex-direction: row;
+    background-color: rgb(215, 226, 235);
+    border-radius: 20px;
+    height: 60px;
+    padding-left: 10px;
+} */
+.grow0{
+    flex-grow: 0;
+}
+.grow1{
+    flex-grow: 1;
+}
+.grow2{
+    flex-grow: 2;
+    text-align: left;
+}
+
+.containerrow{
+    display: flex;
+    margin-bottom: none;
+    border-bottom: 0.2px solid black;
+
+}
+.container {
+	
+	margin: 0 auto;
+	display: flex;
+	/*border: 1px solid #ccc;*/
+    
+}
+
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	text-align: left;
+    padding-top: 10px;
+}
+
+
 .box{
     padding-top: 10px;
     background-color: none;
-    border-radius: 7px;
+    border-radius: 20px;
     width: 85%;
     margin-top: 10px;
     background-color: rgb(215, 226, 235);
-    margin-left: 2%;
-}
-.dentrobox{
-    background-color: none;
+    margin-left: 3%;
 }
 .descricao2{
     background-color: none;
     font-size: medium;
     color: black;
-    text-decoration: none;
     text-decoration: underline;
     padding-left: 60px;
 }
@@ -193,7 +248,19 @@ img{
     margin-bottom: 10px;
     border-radius: 30px;
 }
-
+.card{
+    border: 1px dashed black;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+.descricao{
+    font-size: x-small;
+    color: white;
+    text-decoration: underline;
+    font-style: oblique;
+}
+.descricao:hover{
+    font-size: 15px;
+}
 /* fim de dentro dos boxes de musica*/
 
 
@@ -201,7 +268,8 @@ img{
 #footer{
     display: flex;
     height: 100px;
-    background-color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.233);;
+    box-shadow: 2px -3px 7px white;
 }
 .card1{
     padding-left: 10px;
@@ -213,13 +281,12 @@ img{
 }
 .descricao1{
     font-size: smaller;
-    color: black;
-    text-decoration: none;
+    color: white;
     text-decoration: underline;
 }
 #img{
-    padding-top: 2%;
-    padding-left: 50%;
-    justify-content: end;
+    margin-left: auto;
+    padding-top: 1.5%;
+    padding-right: 0.7%;
 }
-/* Fim do footer */
+/* Inicio do footer */
